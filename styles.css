@@ -1,15 +1,17 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 hr{
   color: rgb(182, 179, 179);
 }
-
-
-
 footer{
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+.container{
+  width: 600px;
+  margin: 100px auto;
+  padding: 16px 14px ;
+  background-color: aliceblue;
 }
