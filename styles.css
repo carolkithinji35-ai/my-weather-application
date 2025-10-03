@@ -21,7 +21,8 @@ footer{
   font-size: 10px;
 }
 .container{
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 70px auto;
   padding: 16px 14px ;
   background-color: aliceblue;
