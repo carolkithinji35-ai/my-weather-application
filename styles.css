@@ -1,52 +1,47 @@
-*{
+* {
   box-sizing: border-box;
-  
 }
 
- 
-main{
-  
+main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 200px;
   font-family: poppins, sans-serif;
-  
 }
 
-footer{
+footer {
   text-align: center;
   padding: 10px;
   font-family: monospace;
   font-size: 10px;
 }
-.container{
+.container {
   max-width: 600px;
   width: 100%;
   margin: 70px auto;
-  padding: 16px 14px ;
+  padding: 16px 14px;
   background-color: aliceblue;
   margin-top: 20px;
   border: none;
   border-radius: 10px;
 }
-input{
+input {
   padding: 0.8rem;
 }
-  
-input[type=text]{
+
+input[type="text"] {
   width: 70%;
   border: none;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
-  
 }
-input[type=text]::placeholder{
+input[type="text"]::placeholder {
   font-family: poppins, sans-serif;
   opacity: 0.6;
 }
 
-input[type=submit]{
+input[type="submit"] {
   width: 20%;
   background-color: rgb(181, 248, 252);
   border: none;
@@ -54,13 +49,19 @@ input[type=submit]{
   color: rgb(10, 8, 8);
   font-family: poppins, sans-serif;
   font-weight: 600;
-
+  transition: all 200ms ease-in-out;
 }
-input[type=submit]:hover{
+input[type="submit"]:hover {
   cursor: pointer;
 }
-.current-temperature{
+input[type="submit"]:active {
+  background-color: rgb(24, 195, 195);
+}
+.current-temperature {
   font-weight: 700;
   font-size: 54px;
   right: px;
+}
+span {
+  font-size: 80Ppx;
 }
