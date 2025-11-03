@@ -21,7 +21,7 @@ footer {
   width: 100%;
   margin: 70px auto;
   padding: 16px 14px;
-  background-color: aliceblue;
+  background-color: hsl(208, 100%, 97%);
   margin-top: 20px;
   border: none;
   border-radius: 10px;
@@ -35,6 +35,7 @@ input[type="text"] {
   border: none;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.078);
 }
 input[type="text"]::placeholder {
   font-family: poppins, sans-serif;
@@ -50,6 +51,7 @@ input[type="submit"] {
   font-family: poppins, sans-serif;
   font-weight: 600;
   transition: all 200ms ease-in-out;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.078);
 }
 input[type="submit"]:hover {
   cursor: pointer;
@@ -60,8 +62,26 @@ input[type="submit"]:active {
 .current-temperature {
   font-weight: 700;
   font-size: 54px;
-  right: px;
 }
 span {
-  font-size: 80Ppx;
+  font-size: 80px;
+}
+.weather-app-temperature-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.weather-app-icon {
+  font-size: 54px;
+}
+.weather-app-temperature{
+  font-weight: 700;
+  font-size: 80px;
+
+}
+.weather-app-unit{
+  margin-top: -38px;
+  font-size: 1.5em;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
 }
