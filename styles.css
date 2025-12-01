@@ -1,12 +1,19 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 250px;
   font-family: poppins, sans-serif;
 }
 
@@ -17,7 +24,7 @@ footer {
   font-size: 10px;
 }
 .container {
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
   margin: 70px auto;
   padding: 16px 14px;
@@ -25,6 +32,7 @@ footer {
   margin-top: 20px;
   border: none;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.043) inset;
 }
 input {
   padding: 0.8rem;
@@ -34,8 +42,10 @@ input[type="text"] {
   width: 70%;
   border: none;
   border-radius: 20px;
+  margin-top: 20px;
+  margin-right: 15px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.078);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.043) ;
 }
 input[type="text"]::placeholder {
   font-family: poppins, sans-serif;
@@ -51,14 +61,24 @@ input[type="submit"] {
   font-family: poppins, sans-serif;
   font-weight: 600;
   transition: all 200ms ease-in-out;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.078);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.046) ;
 }
 input[type="submit"]:hover {
   cursor: pointer;
 }
 input[type="submit"]:active {
-  background-color: rgb(24, 195, 195);
+  background-color: rgba(66, 231, 231, 0.58);
+
 }
+.city-weather-details{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.city-weather-details p{
+  line-height: 25px;
+}
+
 .current-temperature {
   font-weight: 700;
   font-size: 54px;
@@ -70,18 +90,30 @@ span {
   display: flex;
   gap: 6px;
   align-items: center;
+  margin-right: 10px;
 }
 .weather-app-icon {
   font-size: 54px;
 }
-.weather-app-temperature{
+.weather-app-temperature {
   font-weight: 700;
   font-size: 80px;
-
 }
-.weather-app-unit{
+.weather-app-unit {
   margin-top: -38px;
   font-size: 1.5em;
   font-family: poppins, sans-serif;
   font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    padding: 12px 10px;
+  }
+  main {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
 }

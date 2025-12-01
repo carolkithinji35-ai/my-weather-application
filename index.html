@@ -11,23 +11,26 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
   </head>
   <body>
-    <div class="container" style="border: 1px solid black">
+    <div class="container">
       <header>
         <form action="">
           <input
             type="text"
-            placeholder="Enter a city....."
+            placeholder="Enter a city"
             required
             autofocus
+            id="search-input"
           />
           <input type="submit" value="Search" />
         </form>
       </header>
 
       <main>
-        <div>
+        <div class="city-weather-details">
           <h1>Nairobi</h1>
           <p>
             Monday 19:00, clear sky
@@ -35,11 +38,11 @@
             Humidity: <strong>53%</strong>, Wind: <strong>3.6km/h</strong>
           </p>
         </div>
-         <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">12</div>
-            <div class="weather-app-unit">°C</div>
-          </div>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon">🌤️</div>
+          <div class="weather-app-temperature">12</div>
+          <div class="weather-app-unit">°C</div>
+        </div>
       </main>
       <hr />
       <footer>
