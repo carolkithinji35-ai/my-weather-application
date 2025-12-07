@@ -1,5 +1,5 @@
 function getTemperature(response) {
-  console.log(response.data);
+  
   let temperatureElement = document.querySelector("#temperature-element");
   let Temperature = Math.round(response.data.temperature.current);
   let city = document.querySelector("#city");
@@ -33,7 +33,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  
+
   let today = date.getDay();
   let days = [
     "Sunday",
