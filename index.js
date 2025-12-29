@@ -23,7 +23,7 @@ function searchForCity(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", searchForCity);
 
-function formatDate(date) {
+function formattedDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -52,4 +52,4 @@ function formatDate(date) {
 let currentDayTime = document.querySelector("#current-day-time");
 let currentDate = new Date();
 
-currentDayTime.innerHTML = formatDate(currentDate);
+currentDayTime.innerHTML = formattedDate(currentDate);
